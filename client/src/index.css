@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to bottom, #dcdfe2, #D2D6DB);
+
+  height: 100vh;
+}
+
+/* Slide in*/
+@keyframes nav-menu-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Slide out */
+@keyframes nav-menu-out {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Classes for animations */
+.animate-nav-menu-in {
+  animation: nav-menu-in 0.4s ease-out forwards;
+}
+
+.animate-nav-menu-out {
+  animation: nav-menu-out 0.4s ease-out forwards;
+}
